@@ -83,7 +83,7 @@
           "Requests"
         ],
         "description": "Update Customer Lockbox request approval status API",
-        "operationId": "Requests_UpdateRequestStatus",
+        "operationId": "Requests_UpdateStatus",
         "x-ms-examples": {
           "Update a lockbox request status": {
             "$ref": "./examples/Requests_UpdateStatus.json"
@@ -424,14 +424,16 @@
       "in": "path",
       "description": "The Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000)",
       "required": true,
-      "type": "string"
+      "type": "string",
+      "x-ms-parameter-location": "method"
     },
     "ApiVersionParameter": {
       "name": "api-version",
       "in": "query",
       "description": "The API version to be used with the HTTP request.",
       "required": true,
-      "type": "string"
+      "type": "string",
+      "x-ms-parameter-location": "method"
     },
     "RequestIdParameter": {
       "name": "requestId",
